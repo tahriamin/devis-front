@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/devis-front/static/css/main.5641146c.css",
+    "main.js": "/devis-front/static/js/main.cb4330fc.js",
+    "index.html": "/devis-front/index.html",
+    "main.5641146c.css.map": "/devis-front/static/css/main.5641146c.css.map",
+    "main.cb4330fc.js.map": "/devis-front/static/js/main.cb4330fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5641146c.css",
+    "static/js/main.cb4330fc.js"
+  ]
+}
