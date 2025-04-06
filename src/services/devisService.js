@@ -12,13 +12,13 @@ export const getDevis = async () => {
   }
 };
 
-// 🔹 Créer un nouveau devis
 export const createDevis = async (devis) => {
   try {
     const response = await axios.post(`${API_BASE_URL}/devis`, devis);
     return response.data;
   } catch (error) {
     console.error("Erreur API:", error);
+    throw error;
   }
 };
 
@@ -29,5 +29,15 @@ export const getDevisById = async (id) => {
     return response.data;
   } catch (error) {
     console.error("Erreur API:", error);
+  }
+};
+
+export const deleteDevis = async (id) => {
+  const response = await fetch(`${API_BASE_URL}/devis/${id}`, {
+    method: "DELETE",
+  });
+
+  if (!response.ok) {
+    throw new Error("Erreur lors de la suppression du devis");
   }
 };

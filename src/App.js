@@ -11,6 +11,8 @@ import DevisList from "./pages/DevisList";
 import DevisDetail from "./pages/DevisDetail";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 
+
+
 const PrivateRoute = ({ children }) => {
   const { user } = useAuth();
   return user ? children : <Navigate to="/login" />;
@@ -19,7 +21,7 @@ const PrivateRoute = ({ children }) => {
 function App() {
   return (
     <AuthProvider>
-      <Router>
+      <Router basename="/devis-front">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
