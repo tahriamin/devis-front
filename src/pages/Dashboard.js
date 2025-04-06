@@ -53,11 +53,39 @@ const Dashboard = () => {
           <ul>
             {devisList.slice(-5).reverse().map((devis) => (
               <li key={devis.id} className="devis-item">
-                <strong>{devis.clientNom}</strong> — {devis.budget}€  
+                <strong>{devis.clientNom}</strong> — {devis.budget}€
                 <span className="devis-deadline">{getDaysLeft(devis.dateLimite)}</span>
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Bouton PayPal */}
+        <div className="paypal-section">
+          <h3>💬 Consultation en direct</h3>
+          <p>Besoin d'une consultation rapide ? Payez 10€ pour une consultation immédiate.</p>
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_blank"
+          >
+            <input type="hidden" name="cmd" value="_xclick" />
+            <input type="hidden" name="business" value="tahrissam@gmail.com" />
+            <input type="hidden" name="item_name" value="Consultation directe" />
+            <input type="hidden" name="amount" value="10.00" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <button
+              type="submit"
+              className="paypal-btn"
+            >
+              <img
+                src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png"
+                alt="Logo PayPal"
+                className="paypal-logo"
+              />
+              Payer 10€ pour une consultation
+            </button>
+          </form>
         </div>
       </main>
     </div>

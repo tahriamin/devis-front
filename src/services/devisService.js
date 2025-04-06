@@ -22,16 +22,6 @@ export const createDevis = async (devis) => {
   }
 };
 
-// 🔹 Récupérer un devis par ID
-export const getDevisById = async (id) => {
-  try {
-    const response = await axios.get(`${API_BASE_URL}/devis/${id}`);
-    return response.data;
-  } catch (error) {
-    console.error("Erreur API:", error);
-  }
-};
-
 export const deleteDevis = async (id) => {
   const response = await fetch(`${API_BASE_URL}/devis/${id}`, {
     method: "DELETE",

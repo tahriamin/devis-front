@@ -3,7 +3,7 @@
     min-height: 100vh;
     font-family: 'Segoe UI', sans-serif;
   }
-  
+
   /* Sidebar */
   .sidebar {
     width: 240px;
@@ -14,28 +14,28 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   .user-info {
     text-align: center;
   }
-  
+
   .user-avatar {
     font-size: 60px;
     margin-bottom: 10px;
   }
-  
+
   .user-name {
     font-size: 16px;
     font-weight: bold;
   }
-  
+
   .nav-links {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .nav-btn {
     display: flex;
     align-items: center;
@@ -47,26 +47,65 @@
     text-decoration: none;
     transition: background-color 0.2s ease;
   }
-  
+
   .nav-btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
-  
+
   /* Main Content */
   .dashboard-main {
     flex-grow: 1;
     padding: 60px 40px;
     background-color: #f9f9f9;
   }
-  
+
   .dashboard-main h1 {
     font-size: 32px;
     color: #333;
     margin-bottom: 10px;
   }
-  
+
   .dashboard-subtitle {
     font-size: 20px;
     color: #555;
   }
-  
+
+  .paypal-section {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .paypal-form {
+    margin-top: 20px;
+  }
+
+  .paypal-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .paypal-btn:hover {
+    background-color: #005c99;
+  }
+
+  .paypal-logo {
+    height: 24px;
+    width: auto;
+  }

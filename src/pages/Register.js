@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
 
     // ici tu peux remplacer l'URL par ton API
-    const response = await fetch("http://localhost:8080/api/auth/register", {
+    const response = await fetch("https://spring-devis.onrender.com/api/utilisateurs/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
